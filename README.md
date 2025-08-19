@@ -77,17 +77,5 @@ This will:
 
 ---
 
-## 🚀 Next Steps
-- Enhance `main.py` with user input instead of hardcoded queries.  
-- Add streaming responses for interactive Q&A.  
-- Expand ingestion to handle multiple documents in bulk.  
-
----
-
-## 🤝 Contributing
-Pull requests are welcome! Please fork the repo and open a PR.
-
----
-
 ## 📜 License
-MIT License © 2025 [Your Name]
+MIT License © 2025 [Jay Shah]
