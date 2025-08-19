@@ -7,6 +7,7 @@ This project demonstrates how to ingest text data, split it into chunks, embed i
 ```
 IntroToVectorDBs/
 │── ingestion.py       # Script to load, split, embed, and ingest documents
+│── main.py            # Script to query Pinecone and retrieve results
 │── wikipedia.txt      # Sample document (Mahabharata article)
 │── Pipfile            # Pipenv dependencies
 │── Pipfile.lock       # Locked dependencies
@@ -56,13 +57,30 @@ This will:
 3. Embed chunks using OpenAI embeddings
 4. Store embeddings in Pinecone under your `INDEX_NAME`
 
+### 5. Run Retrieval
+```bash
+pipenv run python main.py
+```
+
+This will:
+1. Connect to Pinecone with your stored embeddings  
+2. Run a retrieval-based QA chain  
+3. Print the response to a sample query (e.g., *How is Jainism related to Mahabharata?*)  
+
 ---
 
 ## 📚 Tech Stack
 - [LangChain](https://www.langchain.com/) – LLM orchestration  
-- [OpenAI](https://platform.openai.com/) – Text embeddings  
+- [OpenAI](https://platform.openai.com/) – Text embeddings & LLMs  
 - [Pinecone](https://www.pinecone.io/) – Vector database  
 - [Pipenv](https://pipenv.pypa.io/) – Dependency management  
+
+---
+
+## 🚀 Next Steps
+- Enhance `main.py` with user input instead of hardcoded queries.  
+- Add streaming responses for interactive Q&A.  
+- Expand ingestion to handle multiple documents in bulk.  
 
 ---
 
@@ -72,4 +90,4 @@ Pull requests are welcome! Please fork the repo and open a PR.
 ---
 
 ## 📜 License
-MIT License © 2025 [Jay Shah]
+MIT License © 2025 [Your Name]
